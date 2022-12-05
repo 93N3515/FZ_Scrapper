@@ -2,6 +2,4 @@
 FileZilla from logs Scrapper
 input path to your logs and get result!
 
-https://www.veed.io/view/94b16f4f-96b3-48ee-a430-661dc7acd897?sharingWidget=true&panel=share
-
-<iframe src="https://www.veed.io/embed/94b16f4f-96b3-48ee-a430-661dc7acd897" width="744" height="504" frameborder="0" title="Untitled.mp4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+![output(compress-video-online com)](https://user-images.githubusercontent.com/70991773/205644440-2d2cc522-2c71-4f53-a702-7795ac1c1d8e.gif)
