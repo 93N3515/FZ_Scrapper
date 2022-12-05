@@ -10,16 +10,18 @@ i=0
 f=0
 print("Работа")
 for file in os.listdir(path):
+    f += 1
     if zipfile.is_zipfile(path+"\\"+file):
         f+=1
-        print(f)
         zip = zipfile.ZipFile(path+"\\"+file)
         for zip_file in zipfile.ZipFile.infolist(zip):
-            if zip_file.filename.find("FileZilla") and zip_file.filename.find(".xml") >=1:
+            if zip_file.filename.find("FileZilla") >=1 and zip_file.filename.find(".xml") >=1:
                 i+=1
                 lines = zip.open(zip_file)
                 new_file = open(res_path+f"\\FileZilla#recentservers ({i}).xml","w+")
                 new_file.write(lines.read().decode())
                 new_file.close()
-        os.system("CLS")
+    os.system("CLS")
+    print("Продено: "+str(f))
+    print("Найдено: " + str(i))
 print("\nВсего найдено: "+str(i))
